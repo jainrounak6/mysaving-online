@@ -1,0 +1,80 @@
+.toggleBtn{
+    padding-top: 30px;padding-bottom:80px;
+    text-align: center;
+    &_item{
+        position: absolute;top:24px; right: 24px;width: 44px;height: 44px;border-radius: 50%;
+        background-color: #E1073C;color: #fff !important;
+        i{
+            font-size: 16px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        padding-bottom: 20px;
+    }
+}
+
+.homePage{
+    text-align: right;
+    .logo{
+        font-size: 30px;
+        color: color(500);
+        font-family: font(bd);
+    }
+    .advBox{
+        margin-bottom: 25px;
+        p{
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+    .socialLink{
+        margin-top: 15px;
+        a{
+            color: #333;
+            font-size: 16px;
+            pointer-events: none;
+        }
+        @include media-breakpoint-down(md){
+            justify-content: end !important;
+        }
+    }
+    .views{
+        margin-top: 15px;
+        font-size: 16px;
+        color: #646464;
+    }
+    .newsBox{
+        h1{
+            font-family: font(bd);
+        }
+        h2{
+            font-size: 22px;
+        }
+    }
+    .newsSec{
+        margin-bottom: 40px;
+        &_right{
+            padding-left: 40px;
+            iframe{
+                margin: 20px 0px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-left:15px;
+            }
+        }
+    }
+    .contactForm{
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+    }
+    .newsSec2{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        .container{
+            border-bottom: 1px solid #ccc;
+        }
+       
+    }
+}

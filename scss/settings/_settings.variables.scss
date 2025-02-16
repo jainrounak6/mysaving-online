@@ -1,0 +1,50 @@
+// color variables
+$colors:(
+     50: #fff,
+    500: #E1073C, 
+    550: #2D3282,
+    600: #7CD4FD,
+    620: #0BA5EC,
+    650: #E3F2FF,
+    670: #6B737A,
+    680: #666666,
+    700:#1D2939 ,
+    750: #384048,
+    900: #000000
+    
+);
+
+@function color($color-name, $color-variant:null) {
+   @if ($color-variant != null) {
+    // map inception
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}
+
+// fonts
+$fonts : (
+  rg    : 'Inter-Regular',
+  md    : 'Inter-Medium',
+  bk    : 'Inter-Black',
+  sb    : 'Inter-SemiBold',
+  lt    : 'Inter-Light',
+  bd    : 'Inter-Bold',
+  eb    : 'Inter-ExtraBold'
+);
+
+@function font($font-name, $font-variant:null) {
+   @if ($font-variant != null) {
+    // map inception
+    @return map-get(map-get($fonts, $font-name), $font-variant);
+  } @else {
+    @return map-get($fonts, $font-name);
+  }
+}
+
+
+$imageurl       :    "../images";
+$fonturl        :    "../fonts";
+
+
